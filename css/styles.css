@@ -1,44 +1,177 @@
 /* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7dfb9;
     color: #333;
 }
 
+/* Header */
 header {
-    background: #4CAF50;
+    background: #333;
     color: #fff;
-    padding: 1em 0;
-    text-align: center;
+    padding: 10px 0;
 }
 
 nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
-    padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1em;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    font-size: 1.1em;
 }
 
-main {
-    padding: 2em;
+nav ul li a:hover {
+    color: #f39c12;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
+/* Hero Section */
+.hero {
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
     width: 100%;
-    bottom: 0;
+    padding: 20px;
+}
+
+.hero-image img {
+    width: 400px;
+    height: auto;
+    /* border-radius: 50%; */
+    margin-right: 100px; /* Adds space between image and text */
+}
+
+.hero-text {
+    max-width: 600px;
+    color: green;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem; /* Reduced size */
+}
+
+.hero-text p {
+    font-size: 1.2rem; /* Reduced size */
+    margin: 20px 0;
+}
+
+.hero-about {
+    color: black;
+    font-size: 1.2rem; /* Reduced size */
+    margin: 20px 0; 
+} 
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    background: #f39c12;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    background: #e67e22;
+}
+
+/* Intro Section */
+.intro {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.intro .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Education Section Styles */
+.education {
+    background-color: #f9f9f9; /* Light background color for contrast */
+    padding: 50px 0;
+}
+
+.education h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.education .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 40px; /* Space between education items */
+}
+
+.education-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.education-image img {
+    width: 350px;  /* Set fixed width */
+    height: 200px; /* Set fixed height */
+    object-fit: cover; /* Ensures image scales properly without distortion */
+    border-radius: 10px; /* Rounded corners */
+    margin-right: 30px; /* Space between image and text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.education-details h2 {
+    font-size: 0.93rem;
+    color: #333;
+}
+
+.education-details p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 5px;
 }
