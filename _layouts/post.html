@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article class="blog-post-full">
+  <div class="post-hero">
+    <div class="container">
+      <div class="post-meta-top">
+        <a href="/blog/" class="back-link">← All Posts</a>
+        {% if page.tags %}
+        <div class="post-tags">
+          {% for tag in page.tags %}
+          <span class="tag tag--{{ tag }}">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-meta">
+        <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
+        <span class="post-divider">·</span>
+        <span class="post-read-time">{{ content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
+      </div>
+    </div>
+  </div>
+  <div class="post-body container">
+    <div class="post-content">
+      {{ content }}
+    </div>
+    <div class="post-footer">
+      <a href="/blog/" class="btn btn--outline">← Back to Blog</a>
+    </div>
+  </div>
+</article>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});"></script>

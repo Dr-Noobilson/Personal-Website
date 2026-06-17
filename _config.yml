@@ -1,0 +1,26 @@
+title: Deependra Singh
+description: PhD Research Scholar in Quantum Information Theory & Quantum Foundations at HRI, Prayagraj
+url: "https://dr-noobilson.github.io"
+baseurl: ""
+author:
+  name: Deependra Singh
+  email: jitendradeeependra1003@gmail.com
+  github: Dr-Noobilson
+  linkedin: linkedin.com/in/deependra-singh
+
+permalink: /blog/:year/:month/:day/:title/
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  math_engine: mathjax
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md

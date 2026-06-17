@@ -1,98 +1,325 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content">
-        <div class="hero-image">
-            <img src="photo1.jpg" alt="Your Name">
-        </div>
-        <div class="hero-text">
-            <h1>Deependra Singh</h1>
-            <p class="hero-labels">Physics Enthusiast | Quantum Field Explorer | Machine Learner</p>
-            <p class="hero-about">
-                    I’m currently pursuing an MSc in Physics at NISER, with a keen interest in Quantum Field Theory, String Theory, and beyond. 
-                    Check out my latest projects, publications, and feel free to contact me for collaborations.
-            </p>
-            <a href="cv.pdf" class="btn">View CV</a>
-            <a href="#projects" class="btn">Recent Project</a>
-        </div>
+---
+layout: default
+title: Deependra Singh — Physicist & Researcher
+---
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+<section class="hero" id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Welcome to my corner of the universe</p>
+
+    <h1 class="hero-name">
+      <span class="name-first">Deependra&nbsp;</span><span class="name-last">Singh</span>
+    </h1>
+
+    <div class="hero-typewriter">
+      <span id="typewriter"></span><span class="cursor-blink"></span>
     </div>
+
+    <div class="hero-buttons">
+      <a href="/research.html" class="btn btn--primary">View Research</a>
+      <a href="/assets/cv/resume_latest.pdf" target="_blank" class="btn btn--outline">Download CV</a>
+      <a href="#about" class="btn btn--ghost">About Me ↓</a>
+    </div>
+
+    <div class="hero-socials">
+      <a href="https://github.com/Dr-Noobilson" target="_blank" rel="noopener" class="social-link" title="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      </a>
+      <a href="mailto:jitendradeeependra1003@gmail.com" class="social-link" title="Email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+      </a>
+      <a href="/assets/cv/resume_latest.pdf" target="_blank" class="social-link" title="CV">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
 </section>
 
-    <!-- Brief Intro Section -->
-    <section class="intro">
-        <div class="container">
-            <h2>Welcome to My Website</h2>
-            <p>
-                I’m currently pursuing an MSc in Physics at NISER, with a keen interest in Quantum Field Theory, String Theory, and beyond. 
-                Check out my latest projects, publications, and feel free to contact me for collaborations.
-            </p>
-        </div>
-    </section>
+<!-- =========================================================
+     ABOUT
+     ========================================================= -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
 
-    <!-- Education Section -->
-<section class="education">
-    <h2>Educational Background</h2>
-    <div class="container">
-        <div class="education-item">
-            <!-- School Info -->
-            <div class="education-image">
-                <img src="school1.jpeg" alt="School Image">
-            </div>
-            <div class="education-details">
-                <h2>CMS Rajendra Nagar Campus 1</h2>
-                <p>Lucknow, Uttar Pradesh, India</p>
-                <p>ICSE Board (2006-2015)</p>
-            </div>
+      <!-- Photo + stats -->
+      <div class="about-photo-wrap">
+        <div class="about-photo reveal">
+          <img src="/images/profile.jpeg" alt="Deependra Singh" loading="lazy">
+          <div class="photo-accent"></div>
         </div>
-        <div class="education-item">
-            <!-- School Info -->
-            <div class="education-image">
-                <img src="school.jpg" alt="School Image">
-            </div>
-            <div class="education-details">
-                <h2>St. John's School Marhauli</h2>
-                <p>Varanasi, Uttar Pradesh, India</p>
-                <p>ICSE/ISC Board (2015-2020)</p>
-            </div>
+        <div class="about-stats reveal reveal-delay-1">
+          <div class="stat-card">
+            <span class="stat-number" data-count="3">0</span>
+            <span class="stat-label">Publications</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="5">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="8">0</span>
+            <span class="stat-label">Awards</span>
+          </div>
         </div>
-        <div class="education-item">
-            <!-- College Info -->
-            <div class="education-image">
-                <img src="college.jpg" alt="College Image">
-            </div>
-            <div class="education-details">
-                <h2>National Institute of Science Education and Research</h2>
-                <p>Bhubaneswar, Odisha, India</p>
-                <p>Int. MSc. Physics (2020-2025)</p>
-            </div>
+      </div>
+
+      <!-- Text -->
+      <div class="about-text">
+        <span class="section-label reveal">About</span>
+        <h2 class="section-title reveal reveal-delay-1">Probing the Foundations of Reality</h2>
+        <p class="about-bio reveal reveal-delay-2">
+          I'm a <strong>PhD Research Scholar at the Harish-Chandra Research Institute (HRI), Prayagraj</strong>, where I work at the intersection of <strong>Quantum Information Theory</strong> and <strong>Quantum Foundations</strong>. My research explores entanglement theory, collapse models, quantum reference frames, and the deep mathematical structure underlying quantum mechanics.
+        </p>
+        <p class="about-bio reveal reveal-delay-3">
+          I completed my <strong>Integrated M.Sc. in Physics at NISER Bhubaneswar</strong> (2020–2025) with a GPA of 8.58/10 and a minor in Computer Science. My master's thesis studied the quantization of bosonic strings in flat spacetime through conformal field theory and representation theory. Along the way I've worked on ML (deep learning, graph neural networks), computational physics (Monte Carlo, Feynman integrals), and quantum computing (QKD protocols via Qiskit).
+        </p>
+
+        <p class="interests-title reveal reveal-delay-3">Research Interests</p>
+        <div class="interests-grid reveal reveal-delay-4">
+          <span class="interest-tag"><span class="interest-dot"></span>Entanglement Theory</span>
+          <span class="interest-tag"><span class="interest-dot"></span>Measurement Problem</span>
+          <span class="interest-tag"><span class="interest-dot"></span>Collapse Models</span>
+          <span class="interest-tag"><span class="interest-dot"></span>Quantum Reference Frames</span>
+          <span class="interest-tag"><span class="interest-dot"></span>Quantum Thermodynamics</span>
+          <span class="interest-tag"><span class="interest-dot"></span>Quantum Causality</span>
+          <span class="interest-tag"><span class="interest-dot"></span>Open Quantum Systems</span>
+          <span class="interest-tag"><span class="interest-dot"></span>CFT & String Theory</span>
+          <span class="interest-tag"><span class="interest-dot"></span>Graph Neural Networks</span>
+          <span class="interest-tag"><span class="interest-dot"></span>Quantum AI</span>
+          <span class="interest-tag"><span class="interest-dot"></span>Monte Carlo Methods</span>
+          <span class="interest-tag"><span class="interest-dot"></span>Quantum Computing</span>
         </div>
+
+        <div class="reveal reveal-delay-4">
+          <a href="/research.html" class="btn btn--primary" style="margin-right:12px;">My Research →</a>
+          <a href="/projects.html" class="btn btn--outline">Projects →</a>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
+<!-- =========================================================
+     ACHIEVEMENTS STRIP
+     ========================================================= -->
+<section class="achievements-strip" id="achievements">
+  <div class="container--wide">
+    <div class="achievements-grid">
+      <div class="achievement-item reveal">
+        <span class="achievement-rank">AIR 143</span>
+        <div class="achievement-label">GATE Physics</div>
+        <div class="achievement-year">2025 · Top 0.5%</div>
+      </div>
+      <div class="achievement-item reveal reveal-delay-1">
+        <span class="achievement-rank">Rank 126</span>
+        <div class="achievement-label">CSIR-NET JRF</div>
+        <div class="achievement-year">2025 · Top 0.4%</div>
+      </div>
+      <div class="achievement-item reveal reveal-delay-2">
+        <span class="achievement-rank">#1</span>
+        <div class="achievement-label">NGPE National Topper</div>
+        <div class="achievement-year">2022 · Top 1% All India</div>
+      </div>
+      <div class="achievement-item reveal reveal-delay-3">
+        <span class="achievement-rank">116/120</span>
+        <div class="achievement-label">TOEFL iBT</div>
+        <div class="achievement-year">2024 · C2 Proficiency</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Deependra Singh</p>
-    </footer>
-    <script src="js/scripts.js"></script>
-</body>
-</html>
+<!-- =========================================================
+     RESEARCH PREVIEW
+     ========================================================= -->
+<section class="research-preview" id="research">
+  <div class="container">
+    <span class="section-label reveal">Research</span>
+    <h2 class="section-title reveal reveal-delay-1">Selected Publications</h2>
+    <p class="section-sub reveal reveal-delay-2">
+      Working across quantum information, deep learning, and graph neural networks.
+    </p>
+
+    <div class="papers-list" style="margin-top:48px;">
+
+      <a class="paper-card reveal" href="/research.html">
+        <div>
+          <div class="paper-venue">Springer LNNS · 2023 · DOI 10.1007/978-981-97-7190-5_9</div>
+          <div class="paper-title">Retinal Fundus Multi-Disease Image Classification using Hybrid CNN-Transformer-Ensemble Architectures</div>
+          <div class="paper-abstract">
+            We develop a comprehensive diagnostic system for 20 retinal disease labels from fundus images using a novel hybrid architecture that combines deeper CNNs, Transformer encoders, and ensemble methods in sequential and parallel configurations, addressing critical challenges of limited datasets and class imbalance through novel data augmentation strategies.
+          </div>
+          <div class="paper-tags">
+            <span class="badge badge--blue">Deep Learning</span>
+            <span class="badge badge--green">Medical AI</span>
+            <span class="badge badge">Springer</span>
+          </div>
+        </div>
+        <div class="paper-arrow">→</div>
+      </a>
+
+      <a class="paper-card reveal reveal-delay-1" href="/research.html">
+        <div>
+          <div class="paper-venue">ACM Transactions on Computing for Healthcare · Under Review · 2024</div>
+          <div class="paper-title">Interpretable AI Models for Detecting and Classifying Multiple Retinal Conditions</div>
+          <div class="paper-abstract">
+            Extension of our retinal disease classification system with a focus on explainability using gradient-based attribution methods and attention visualization, enabling clinicians to trust and interpret model predictions for multi-label retinal disease diagnosis.
+          </div>
+          <div class="paper-tags">
+            <span class="badge badge--blue">Explainable AI</span>
+            <span class="badge badge--green">Healthcare</span>
+            <span class="badge badge--gold">Under Review</span>
+          </div>
+        </div>
+        <div class="paper-arrow">→</div>
+      </a>
+
+      <a class="paper-card reveal reveal-delay-2" href="/research.html">
+        <div>
+          <div class="paper-venue">NLDL 2026 · Submitted</div>
+          <div class="paper-title">HetGSMOTE: Addressing Class Imbalance in Heterogeneous Graph Neural Networks</div>
+          <div class="paper-abstract">
+            We propose HetGSMOTE, a novel oversampling technique for heterogeneous graphs that generates synthetic minority-class node embeddings in the latent space of a heterogeneous GNN, significantly outperforming existing methods on benchmark datasets with severe class imbalance.
+          </div>
+          <div class="paper-tags">
+            <span class="badge badge--blue">Graph Neural Networks</span>
+            <span class="badge badge--green">Class Imbalance</span>
+            <span class="badge badge--gold">Submitted</span>
+          </div>
+        </div>
+        <div class="paper-arrow">→</div>
+      </a>
+
+    </div>
+
+    <div style="text-align:center; margin-top:40px;" class="reveal">
+      <a href="/research.html" class="btn btn--outline">All Research & Experience →</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     TIMELINE
+     ========================================================= -->
+<section class="timeline-section" id="timeline">
+  <div class="container">
+    <span class="section-label">Journey</span>
+    <h2 class="section-title">Education & Experience</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2025 – Present</div>
+        <div class="timeline-title">PhD in Physics</div>
+        <div class="timeline-org">Harish-Chandra Research Institute (HRI), Prayagraj</div>
+        <div class="timeline-desc">Research area: Quantum Information Theory and Quantum Foundations. Focus on entanglement, collapse models, and the mathematical structure of quantum mechanics.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">May 2024 – May 2025</div>
+        <div class="timeline-title">Master's Thesis — Bosonic String in Flat Spacetime</div>
+        <div class="timeline-org">NISER Bhubaneswar · Supervised by Dr. Shamik Banerjee</div>
+        <div class="timeline-desc">Studied the quantization framework for bosonic strings including covariant and light-cone quantization. Deep dive into conformal field theory, representation theory, and the Virasoro algebra.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Aug 2020 – Jun 2025</div>
+        <div class="timeline-title">Integrated M.Sc. in Physics</div>
+        <div class="timeline-org">NISER Bhubaneswar (HBNI) · GPA 8.58/10 · Minor in CS</div>
+        <div class="timeline-desc">5-year integrated program covering quantum mechanics, field theory, condensed matter, and statistical mechanics. Minor in Computer Science with work in ML and quantum computing.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">May 2023 – Jul 2023</div>
+        <div class="timeline-title">Summer Research Fellow — Feynman Integrals</div>
+        <div class="timeline-org">IISER Mohali</div>
+        <div class="timeline-desc">Derived asymptotic expansions in high- and low-mass limits for 1-loop Feynman integrals (bubble, triangle, box) relevant to QED scattering. Analytical and numerical analysis with FeynCalc in Mathematica.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">May 2022 – Jul 2022</div>
+        <div class="timeline-title">Summer Research Fellow — Proton Pressure</div>
+        <div class="timeline-org">IIT Bhilai</div>
+        <div class="timeline-desc">Developed statistical mechanics models for pressure distribution inside protons using degenerate quark distributions. Work acknowledged at the DAE Symposium on Nuclear Physics (2023).</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024</div>
+        <div class="timeline-title">Teaching Assistant — Advanced Machine Learning</div>
+        <div class="timeline-org">NISER Bhubaneswar</div>
+        <div class="timeline-desc">Delivered lectures on deep learning, GNNs, and transformers. Mentored two student project groups in ML research.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CONTACT
+     ========================================================= -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <span class="section-label reveal">Get in Touch</span>
+        <h2 class="section-title reveal reveal-delay-1">Let's Talk Physics<br>(or anything else)</h2>
+        <p class="section-sub reveal reveal-delay-2">
+          Whether it's a collaboration, a question, or you just want to discuss quantum mechanics over text — I'm always happy to hear from you.
+        </p>
+        <div class="contact-items reveal reveal-delay-3">
+          <div class="contact-item">
+            <div class="contact-icon">✉</div>
+            <a href="mailto:jitendradeeependra1003@gmail.com">jitendradeeependra1003@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <span>HRI, Prayagraj, India</span>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </div>
+            <a href="https://github.com/Dr-Noobilson" target="_blank" rel="noopener">github.com/Dr-Noobilson</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal reveal-delay-2">
+        <form id="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="f-name">Name</label>
+            <input class="form-input" type="text" id="f-name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-email">Email</label>
+            <input class="form-input" type="email" id="f-email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-message">Message</label>
+            <textarea class="form-textarea" id="f-message" name="message" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

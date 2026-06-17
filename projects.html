@@ -1,0 +1,159 @@
+---
+layout: default
+title: Projects — Deependra Singh
+description: Coding projects in quantum computing, computational physics, and machine learning.
+---
+
+<div class="page-hero">
+  <div class="container">
+    <span class="page-hero-label">Projects</span>
+    <h1>Code &amp; Projects</h1>
+    <p>A mix of quantum computing simulations, physics-flavoured algorithms, and machine learning experiments. Most projects live on GitHub.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="quantum">Quantum</button>
+      <button class="filter-btn" data-filter="physics">Physics Sim</button>
+      <button class="filter-btn" data-filter="ml">Machine Learning</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- QKD Protocols -->
+      <a class="project-card reveal"
+         href="https://github.com/Dr-Noobilson/QKD_Protocols"
+         target="_blank" rel="noopener"
+         data-category="quantum"
+         data-repo="QKD_Protocols">
+        <div class="project-card-top">
+          <div class="project-icon">🔐</div>
+          <div class="project-stars">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span class="js-stars">—</span>
+          </div>
+        </div>
+        <div class="project-name">QKD Protocols</div>
+        <div class="project-desc">Full simulation of the BB84 and E91 Quantum Key Distribution protocols built with Qiskit and Flask. Demonstrates quantum cryptography over a simulated multi-device network, showcasing how quantum principles break classical encryption assumptions (Shor's algorithm vs RSA).</div>
+        <div class="project-footer">
+          <span class="badge badge--blue">Qiskit</span>
+          <span class="badge badge--blue">Quantum Crypto</span>
+          <span class="badge">Python</span>
+        </div>
+      </a>
+
+      <!-- Double Exchange Model -->
+      <a class="project-card reveal reveal-delay-1"
+         href="https://github.com/Dr-Noobilson/Double-Exchange-Model"
+         target="_blank" rel="noopener"
+         data-category="physics"
+         data-repo="Double-Exchange-Model">
+        <div class="project-card-top">
+          <div class="project-icon">⚛️</div>
+          <div class="project-stars">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span class="js-stars">—</span>
+          </div>
+        </div>
+        <div class="project-name">Double Exchange Model</div>
+        <div class="project-desc">Monte Carlo simulation of the Double Exchange Model in the limit of large Hund's coupling, a key model for understanding colossal magnetoresistance in manganites. Explores phase transitions between ferromagnetic metallic and antiferromagnetic insulating phases.</div>
+        <div class="project-footer">
+          <span class="badge badge--gold">Monte Carlo</span>
+          <span class="badge badge--gold">Condensed Matter</span>
+          <span class="badge">Python</span>
+        </div>
+      </a>
+
+      <!-- VMC Importance Sampling -->
+      <a class="project-card reveal reveal-delay-2"
+         href="https://github.com/Dr-Noobilson/VMC-Importance-Sampling"
+         target="_blank" rel="noopener"
+         data-category="physics"
+         data-repo="VMC-Importance-Sampling">
+        <div class="project-card-top">
+          <div class="project-icon">🌊</div>
+          <div class="project-stars">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span class="js-stars">—</span>
+          </div>
+        </div>
+        <div class="project-name">VMC Importance Sampling</div>
+        <div class="project-desc">Variational Monte Carlo framework with importance sampling for estimating quantum ground-state energies. Implements the Metropolis-Hastings algorithm with trial wave functions, demonstrating the power of stochastic methods for many-body quantum systems.</div>
+        <div class="project-footer">
+          <span class="badge badge--gold">Variational MC</span>
+          <span class="badge badge--gold">Quantum Many-Body</span>
+          <span class="badge">Python / NumPy</span>
+        </div>
+      </a>
+
+      <!-- Retinal AI -->
+      <div class="project-card reveal reveal-delay-3"
+           data-category="ml"
+           style="cursor:default;">
+        <div class="project-card-top">
+          <div class="project-icon">👁️</div>
+          <div class="project-stars" style="font-size:0.72rem; color:var(--text-dim);">Paper</div>
+        </div>
+        <div class="project-name">Retinal Disease Classifier</div>
+        <div class="project-desc">Hybrid CNN-Transformer-Ensemble architecture for multi-label classification of 20 retinal diseases from fundus images. Addressed severe class imbalance with novel augmentation. Published at IHIC 2023 (Springer LNNS). Extended with explainability techniques for ACM TCH submission.</div>
+        <div class="project-footer">
+          <span class="badge badge--blue">PyTorch</span>
+          <span class="badge badge--blue">Vision Transformer</span>
+          <span class="badge badge--green">Published</span>
+        </div>
+      </div>
+
+      <!-- HetGSMOTE -->
+      <div class="project-card reveal reveal-delay-1"
+           data-category="ml"
+           style="cursor:default;">
+        <div class="project-card-top">
+          <div class="project-icon">🕸️</div>
+          <div class="project-stars" style="font-size:0.72rem; color:var(--text-dim);">Paper</div>
+        </div>
+        <div class="project-name">HetGSMOTE</div>
+        <div class="project-desc">Novel oversampling technique for heterogeneous graph neural networks. Generates synthetic minority-class node embeddings in the GNN latent space to address class imbalance in relational learning tasks. Submitted to NLDL 2026.</div>
+        <div class="project-footer">
+          <span class="badge badge--blue">PyTorch Geometric</span>
+          <span class="badge badge--blue">GNNs</span>
+          <span class="badge badge--gold">Submitted</span>
+        </div>
+      </div>
+
+      <!-- LTO Ergodicity Project -->
+      <div class="project-card reveal reveal-delay-2"
+           data-category="physics"
+           style="cursor:default;">
+        <div class="project-card-top">
+          <div class="project-icon">🔄</div>
+          <div class="project-stars" style="font-size:0.72rem; color:var(--text-dim);">Report</div>
+        </div>
+        <div class="project-name">LTO &amp; Ergodicity Breaking</div>
+        <div class="project-desc">Many-body physics project investigating Long-Time Oscillations and ergodicity breaking in closed quantum systems. Analytical and numerical study of thermalization, eigenstate thermalization hypothesis (ETH), and anomalous dynamics.</div>
+        <div class="project-footer">
+          <span class="badge badge--gold">Many-Body Physics</span>
+          <span class="badge badge--gold">Quantum Dynamics</span>
+          <span class="badge">Mathematica</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- GitHub CTA -->
+    <div style="text-align:center; margin-top:56px;" class="reveal">
+      <p style="color:var(--text-muted); margin-bottom:20px; font-size:0.95rem;">More experiments and work-in-progress on GitHub →</p>
+      <a href="https://github.com/Dr-Noobilson"
+         target="_blank" rel="noopener"
+         class="btn btn--primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        View GitHub Profile
+      </a>
+    </div>
+
+  </div>
+</section>
