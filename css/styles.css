@@ -175,3 +175,123 @@ nav ul li a:hover {
     color: #666;
     margin-bottom: 5px;
 }
+/* #f7dfb9; */
+/* Project */
+.projects {
+    background-color: mediumaquamarine;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.container {
+    position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Project Content Wrapper */
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px; 
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:  lemonchiffon;
+    border-radius: 10px;
+}
+
+/* Left Image Styling */
+.project-left img {
+    width: 450px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Section Styling */
+.project-right {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between stacked images */
+    /* background-color: #fff; */
+}
+
+.project-right img {
+    max-width: 370px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Details Styling */
+.project-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 50px 0px 50px;
+}
+
+.project-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.project-details .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-details .btn:hover {
+    background-color: #e6b800;
+}
+
+/* Slider Controls */
+.slider-controls {
+    position: absolute; 
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* transform: translateY(-50%); */
+}
+
+/* Individual Button Styling */
+.slider-controls button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 0; /* Square shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-controls button:hover {
+    background-color: rgba(128, 128, 128, 0.5); /* Grey translucent on hover */
+}

@@ -5,7 +5,7 @@ layout: default
   <div class="post-hero">
     <div class="container">
       <div class="post-meta-top">
-        <a href="/blog/" class="back-link">← All Posts</a>
+        <a href="{{ site.baseurl }}/blog/" class="back-link">← All Posts</a>
         {% if page.tags %}
         <div class="post-tags">
           {% for tag in page.tags %}
@@ -27,7 +27,7 @@ layout: default
       {{ content }}
     </div>
     <div class="post-footer">
-      <a href="/blog/" class="btn btn--outline">← Back to Blog</a>
+      <a href="{{ site.baseurl }}/blog/" class="btn btn--outline">← Back to Blog</a>
     </div>
   </div>
 </article>
